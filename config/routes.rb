@@ -1,4 +1,10 @@
 BookingService::Application.routes.draw do
+  get "pages/home"
+
+  get "pages/uni_repository"
+
+  get "pages/book_your_flight"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
