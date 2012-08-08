@@ -22,5 +22,19 @@ describe PagesController do
       response.should be_success
     end
   end
+  
+  describe "GET 'about_me'" do
+    it "returns http success" do
+      get 'about_me'
+      response.should be_success
+    end
+  end
+  
+  describe "GET 'contact_me'" do
+    it "returns http success" do
+      get 'contact_me'
+      response.should be_success
+    end
+  end
 
 end
