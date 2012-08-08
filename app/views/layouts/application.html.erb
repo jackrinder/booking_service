@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>BookingService</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-
-<%= yield %>
-
-</body>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<title>This is the official page of Effie Dimou | <%= yield(:title) %></title>
+		<%= stylesheet_link_tag "application", :media=>:all %>
+		<%= javascript_include_tag "application"%>
+		<%= csrf_meta_tags %>
+		
+		
+	</head>
+	<body id="application.html" onload="">
+		<%= yield %>
+	</body>
 </html>

@@ -1,2 +1,20 @@
-<h1>Book your flight now!</h1>
-<p>Find me in app/views/pages/book_your_flight.html.erb</p>
+<% provide(:title, 'Book your flight now!') %>
+
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<title>This is the official page of Effie Dimou | <%= yield(:title) %></title>
+
+	</head>
+
+	<body id = "book_your_flight.html" onload="">
+		<h1>Book your flight now!</h1>
+		<p>Find me in app/views/pages/book_your_flight.html.erb</p>
+
+	</body>
+</html>
+
+
+
